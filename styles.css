@@ -1,10 +1,49 @@
+/* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-h2, h3 {
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 300px;
+    margin: 0 auto;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+li a:hover {
+    color: #0066cc;
+}
+
+
+h2,
+h3 {
     color: #333;
 }
 
@@ -20,7 +59,9 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -28,7 +69,8 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 5px;
 }
 
-input[type="submit"], button {
+input[type="submit"],
+button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -37,7 +79,8 @@ input[type="submit"], button {
     cursor: pointer;
 }
 
-input[type="submit"]:hover, button:hover {
+input[type="submit"]:hover,
+button:hover {
     background-color: #0056b3;
 }
 
