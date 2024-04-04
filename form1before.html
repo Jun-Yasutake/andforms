@@ -27,18 +27,72 @@
     </section>
     
     <!-- 応募フォーム -->
-    <form action="confirm.html" method="get">
-        <label for="fullname1">氏名:</label>
-        <input type="text" id="fullname1" name="fullname1" placeholder="安武">
-        
-        <label for="email1">メールアドレス:</label>
-        <input type="email" id="email1" name="applicant_email1">
-        
-        <label for="message1">お問い合わせ内容:</label>
-        <textarea id="message1" name="applicant_message1"></textarea>
-        
-        <input type="submit" value="確認画面へ">
-    </form>
-    <a href="index.html">トップページに戻る</a>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>応募フォーム</title>
+    </head>
+    <body>
+        <form action="confirm.html" method="get">
+            <label for="lastname">姓:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="安武">
+    
+            <label for="firstname">名:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="太郎">
+    
+            <label for="furigana_last">フリガナ（セイ）:</label>
+            <input type="text" id="furigana_last" name="furigana_last" placeholder="ヤスタケ">
+    
+            <label for="furigana_first">フリガナ（メイ）:</label>
+            <input type="text" id="furigana_first" name="furigana_first" placeholder="タロウ">
+    
+            <label for="job_category">興味のある職種:</label>
+            <select id="job_category" name="job_category">
+                <option value="software_engineer">ソフトウェアエンジニア</option>
+                <option value="designer">デザイナー</option>
+                <option value="marketing">マーケティング</option>
+                <option value="other">その他</option>
+            </select>
+    
+            <fieldset>
+                <legend>希望する雇用形態:</legend>
+                <label><input type="radio" name="employment_type" value="full_time"> 正社員</label>
+                <label><input type="radio" name="employment_type" value="contract"> 契約社員</label>
+                <label><input type="radio" name="employment_type" value="part_time"> パート・アルバイト</label>
+                <label><input type="radio" name="employment_type" value="other"> その他</label>
+            </fieldset>
+    
+            <label for="interests">興味のある業務内容:</label><br>
+            <label><input type="checkbox" name="interests" value="project_management"> プロジェクトマネジメント</label>
+            <label><input type="checkbox" name="interests" value="data_analysis"> データ解析</label>
+            <label><input type="checkbox" name="interests" value="sales_marketing"> 営業・マーケティング</label>
+            <label><input type="checkbox" name="interests" value="hr_admin"> 人事・総務</label><br>
+    
+            <label for="birthdate">生年月日:</label>
+            <input type="date" id="birthdate" name="birthdate">
+            
+            <label for="phone">電話番号:</label>
+            <input type="tel" id="phone" name="phone">
+    
+            <label for="address">住所:</label>
+            <input type="text" id="postal_code" name="postal_code" placeholder="郵便番号">
+            <select id="prefecture" name="prefecture">
+                <!-- 都道府県のオプションを追加 -->
+            </select>
+            <input type="text" id="address" name="address" placeholder="以降の住所">
+    
+            <label for="file_upload">ファイルアップロード:</label>
+            <input type="file" id="file_upload" name="file_upload" disabled>
+    
+            <label for="email">メールアドレス:</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="message">お問い合わせ内容:</label>
+            <textarea id="message" name="message"></textarea>
+    
+            <input type="submit" value="確認画面へ">
+        </form>
+        <a href="index.html">トップページに戻る</a>
+    </body>
+    </html>
